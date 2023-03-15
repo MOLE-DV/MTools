@@ -4,8 +4,6 @@ addEventListener('load', (e)=>{
     document.querySelectorAll('#sel_btn')[0].style.backgroundColor = 'rgb(90, 90, 90)';
 })
 
-console.log("ewee");
-
 function changeMenu(el){
     document.querySelectorAll('#sel_btn').forEach((element) =>{
         element.style.backgroundColor = 'gray';
@@ -24,6 +22,7 @@ function fileDialog(){
     const input = document.getElementById('file');
     
     input.onchange = function(e){
+        image = window.URL.createObjectURL(e.target.files[0]);
         document.getElementById('img').style.backgroundImage = 'url(' + window.URL.createObjectURL(e.target.files[0]) + ')';
         document.getElementById('select_img').style.opacity = 0;
     }
@@ -33,5 +32,5 @@ function fileDialog(){
 }
 
 function leaveMS(el){
-    if(image) el.style.animation = '1s popout forwards';
+    if(image != "") el.style.animation = '1s popout forwards';
 }
