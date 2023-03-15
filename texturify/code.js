@@ -4,7 +4,7 @@ addEventListener('load', (e)=>{
     document.querySelectorAll('#sel_btn')[0].style.backgroundColor = 'rgb(90, 90, 90)';
 })
 
-console.log("e");
+console.log("ewe");
 
 function changeMenu(el){
     document.querySelectorAll('#sel_btn').forEach((element) =>{
