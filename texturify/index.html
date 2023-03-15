@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="code.js"></script>
+</head>
+<body>
+    <input type="file" id="file">
+    <div id="cont">
+        <main id="main">
+            <div id="selection">
+                <div id="sel_btn" onclick="changeMenu(this)">Input</div>
+                <div id="sel_btn" onclick="changeMenu(this)">Output</div>
+                <div id="sel_btn" onclick="changeMenu(this)">Settings</div>
+            </div>
+
+            <div id="INPUT">
+                <div id="top">
+                    <div id="holder">
+                        <div id="img">
+                            <div id="select_img" onclick="fileDialog()"v onmouseenter="this.style.animation = '1s popin forwards';" onmouseleave="leaveMS(this)"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="bottom">
+                </div>
+            </div>
+            <div id="OUTPUT"></div>
+            <div id="SETTINGS">
+                <div id="sizes">
+                    <select name="connection" id="">
+                        <option value="con">not linked</option>
+                        <option value="con">linked axis</option>
+                    </select>
+                    <div id="x">Size x <input type="number"></div>
+                    <div id="y">Size y <input type="number"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
